@@ -1,0 +1,15 @@
+.seccion-grid {
+  padding: 3rem 0 4rem;
+}
+
+.grid-vacio {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--color-texto-suave);
+}
+
+.grid-vacio .icono-vacio {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}

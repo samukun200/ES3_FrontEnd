@@ -1,0 +1,52 @@
+.barra-nav {
+  background-color: var(--color-secundario);
+  padding: 0.8rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.barra-nav .navbar-brand {
+  font-family: var(--fuente-titulo);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff !important;
+}
+
+.barra-nav .navbar-brand span {
+  color: var(--color-primario);
+}
+
+.barra-nav .nav-link {
+  color: rgba(255, 255, 255, 0.78) !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.15s;
+}
+
+.barra-nav .nav-link:hover {
+  color: #fff !important;
+}
+
+.barra-nav .input-busqueda {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: var(--radio) 0 0 var(--radio);
+}
+
+.barra-nav .input-busqueda::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.barra-nav .input-busqueda:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: var(--color-primario);
+  box-shadow: 0 0 0 0.2rem rgba(192, 57, 43, 0.25);
+  color: #fff;
+}
+
+.barra-nav .btn-buscar {
+  border-radius: 0 var(--radio) var(--radio) 0;
+}

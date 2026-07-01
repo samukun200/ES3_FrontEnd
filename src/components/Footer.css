@@ -1,0 +1,32 @@
+.pie-pagina {
+  background-color: #111820;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.84rem;
+  padding: 2rem 0;
+}
+
+.pie-pagina .marca {
+  font-family: var(--fuente-titulo);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.pie-pagina .marca span {
+  color: var(--color-primario);
+}
+
+.pie-pagina a {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.pie-pagina a:hover {
+  color: var(--color-primario);
+}
+
+.pie-pagina .separador {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin: 1.25rem 0;
+}

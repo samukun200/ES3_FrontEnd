@@ -1,0 +1,91 @@
+/* ============================================
+   VARIABLES GLOBALES - PropiedadChile
+   ============================================ */
+:root {
+  --color-primario: #c0392b;
+  --color-primario-oscuro: #96281b;
+  --color-secundario: #2c3e50;
+  --color-secundario-suave: #34495e;
+  --color-fondo: #f8f5f0;
+  --color-fondo-tarjeta: #ffffff;
+  --color-borde: #e0d9d0;
+  --color-texto: #1a1a1a;
+  --color-texto-suave: #5a6475;
+  --color-exito: #27ae60;
+
+  --fuente-titulo: 'Playfair Display', Georgia, serif;
+  --fuente-cuerpo: 'Inter', system-ui, sans-serif;
+
+  --sombra: 0 8px 24px -8px rgba(0, 0, 0, 0.18);
+  --radio: 6px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-cuerpo);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--fuente-titulo);
+}
+
+/* Botón principal rojo */
+.btn-principal {
+  background-color: var(--color-primario);
+  border-color: var(--color-primario);
+  color: #fff;
+  font-weight: 600;
+  border-radius: var(--radio);
+}
+.btn-principal:hover,
+.btn-principal:focus {
+  background-color: var(--color-primario-oscuro);
+  border-color: var(--color-primario-oscuro);
+  color: #fff;
+}
+
+/* Botón secundario con borde */
+.btn-borde {
+  border: 2px solid var(--color-secundario);
+  color: var(--color-secundario);
+  font-weight: 600;
+  border-radius: var(--radio);
+  background: transparent;
+}
+.btn-borde:hover {
+  background-color: var(--color-secundario);
+  color: #fff;
+}
+
+/* Etiqueta de sección */
+.etiqueta-seccion {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-primario);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.etiqueta-seccion::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-primario);
+}
+
+.titulo-seccion {
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  color: var(--color-secundario);
+}

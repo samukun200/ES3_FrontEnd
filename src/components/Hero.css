@@ -1,0 +1,59 @@
+.seccion-inicio {
+  background:
+    linear-gradient(180deg, rgba(44, 62, 80, 0.88) 0%, rgba(44, 62, 80, 0.72) 100%),
+    url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=70');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 5rem 0 4rem;
+}
+
+.seccion-inicio h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.seccion-inicio .subtitulo {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.1rem;
+  max-width: 520px;
+}
+
+.seccion-inicio .estadisticas {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.seccion-inicio .estadistica-item strong {
+  display: block;
+  font-family: var(--fuente-titulo);
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1;
+}
+
+.seccion-inicio .estadistica-item span {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.65);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 575.98px) {
+  .seccion-inicio {
+    padding: 3.5rem 0 5rem;
+    text-align: center;
+  }
+  .seccion-inicio .subtitulo {
+    max-width: 100%;
+  }
+  .seccion-inicio .estadisticas {
+    justify-content: center;
+  }
+}

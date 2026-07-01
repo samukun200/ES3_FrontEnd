@@ -1,0 +1,40 @@
+.seccion-financiamiento {
+  background-color: #fff;
+  padding: 4rem 0;
+  border-top: 1px solid var(--color-borde);
+}
+
+.acordeon-financiamiento .accordion-item {
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio) !important;
+  margin-bottom: 0.65rem;
+  overflow: hidden;
+}
+
+.acordeon-financiamiento .accordion-button {
+  font-family: var(--fuente-titulo);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-secundario);
+  background-color: #fff;
+}
+
+.acordeon-financiamiento .accordion-button:not(.collapsed) {
+  color: var(--color-primario);
+  background-color: #fdf5f4;
+  box-shadow: none;
+}
+
+.acordeon-financiamiento .accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(192, 57, 43, 0.15);
+}
+
+.acordeon-financiamiento .accordion-button::after {
+  filter: hue-rotate(185deg) saturate(0.5);
+}
+
+.acordeon-financiamiento .accordion-body {
+  color: var(--color-texto-suave);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}

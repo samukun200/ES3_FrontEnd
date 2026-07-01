@@ -1,0 +1,85 @@
+.seccion-contacto {
+  padding: 4rem 0;
+  background-color: var(--color-fondo);
+}
+
+.panel-contacto {
+  background-color: var(--color-secundario);
+  color: #fff;
+  border-radius: var(--radio);
+  padding: 2.5rem;
+}
+
+.panel-contacto h2 {
+  color: #fff;
+}
+
+.panel-contacto .info-contacto {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.panel-contacto .info-contacto li {
+  margin-bottom: 0.65rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.panel-contacto .info-contacto i {
+  color: var(--color-primario);
+  font-size: 1rem;
+}
+
+.panel-contacto .form-control,
+.panel-contacto .form-select,
+.panel-contacto textarea {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: var(--radio);
+}
+
+.panel-contacto .form-control::placeholder,
+.panel-contacto textarea::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.panel-contacto .form-control:focus,
+.panel-contacto .form-select:focus,
+.panel-contacto textarea:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: var(--color-primario);
+  box-shadow: 0 0 0 0.2rem rgba(192, 57, 43, 0.3);
+  color: #fff;
+}
+
+.panel-contacto .form-select option {
+  color: var(--color-texto);
+  background: #fff;
+}
+
+.panel-contacto label {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.panel-contacto .invalid-feedback {
+  color: #f4a49a;
+}
+
+.divisor-contacto {
+  border-color: rgba(255, 255, 255, 0.15);
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 991.98px) {
+  .panel-contacto {
+    padding: 1.75rem;
+  }
+}

@@ -1,0 +1,110 @@
+.tarjeta-propiedad {
+  background: var(--color-fondo-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-propiedad:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--sombra);
+}
+
+.tarjeta-imagen-wrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.tarjeta-imagen-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.tarjeta-imagen-wrap:hover img {
+  transform: scale(1.06);
+}
+
+.tarjeta-etiqueta-operacion {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.7rem;
+  background: var(--color-primario);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.28rem 0.55rem;
+  border-radius: var(--radio);
+}
+
+.tarjeta-contador-fotos {
+  position: absolute;
+  bottom: 0.7rem;
+  right: 0.7rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radio);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.tarjeta-cuerpo {
+  padding: 1rem 1.1rem 1.2rem;
+}
+
+.tarjeta-uf {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-exito);
+  margin-bottom: 0.2rem;
+}
+
+.tarjeta-precio {
+  font-family: var(--fuente-titulo);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-secundario);
+  margin-bottom: 0.3rem;
+}
+
+.tarjeta-titulo {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-texto);
+  margin-bottom: 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tarjeta-ubicacion {
+  font-size: 0.82rem;
+  color: var(--color-texto-suave);
+  margin-bottom: 0.7rem;
+}
+
+.tarjeta-caracteristicas {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  color: var(--color-texto-suave);
+  margin-bottom: 0.9rem;
+}
+
+.tarjeta-caracteristicas span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
